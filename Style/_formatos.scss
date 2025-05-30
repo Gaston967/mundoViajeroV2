@@ -1,0 +1,28 @@
+@use 'variables';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: variables.$fontMain;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2{
+    margin: 5px;   
+    text-align: center; 
+    font-size: 25px;
+}
+
+.contenedorBotonArriba{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}

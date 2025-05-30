@@ -1,0 +1,168 @@
+@use 'variables';
+
+.autos-form {
+  background-color: variables.$primary-color;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .formulario-autos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    .input-ciudad {
+      flex: 1 1 100%;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .fecha-hora {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      background: white;
+      color: black;
+      padding: 0.5rem;
+      border-radius: 6px;
+      min-width: 180px;
+
+      input {
+        border: none;
+        padding: 0.5rem;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      span {
+        font-size: 0.8rem;
+        color: #555;
+      }
+    }
+
+    .boton-buscar {
+      background-color: #ff4d30;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      flex: 1 1 100%;
+      max-width: 200px;
+      align-self: center;
+
+      &:hover {
+        background-color: #e63b1e;
+      }
+    }
+   
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    .formulario-autos {
+      flex-direction: column;
+
+      .fecha-hora {
+        flex: 1 1 100%;
+      }
+
+      .boton-buscar {
+        width: 100%;
+      }
+    }
+  }
+}
+//grilla de resultaados//
+.card-auto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 1rem auto;
+  gap: 1rem;
+
+  .auto-info {
+    display: flex;
+    gap: 1rem;
+    flex: 1 1 60%;
+
+    .auto-detalle {
+      h3 {
+        font-size: 1.25rem;
+        margin: 0;
+      }     
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .auto-info,
+    .auto-precio {
+      flex: 1 1 100%;
+      border: none;
+      padding-left: 0;
+    }
+
+    .auto-precio {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+//grilla de resultaados//
+.resultados-autos {
+  margin: 2rem 0;
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .grilla-autos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .card-auto {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 48%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 31%;
+    }
+  }
+}

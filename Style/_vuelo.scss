@@ -1,0 +1,94 @@
+@use 'variables';
+
+.buscador-vuelos {
+  background-color: variables.$primary-color;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+  .formulario-vuelos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .campo {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      min-width: 200px;
+
+      label {
+        font-size: 0.65rem;
+        color: #666;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      input {
+        border: none;
+        font-size: 0.9rem;
+        color: #111;
+        outline: none;
+        background: transparent;
+      }
+    }
+
+    .intercambiar {
+      display: flex;
+      align-items: center;
+
+      button {
+        background: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+
+    .fechas {
+      .fechas-inputs {
+        display: flex;
+        gap: 0.5rem;
+
+        input {
+          width: 100px;
+        }
+      }
+    }
+
+    .btn-buscar {
+      background: #ff5733;
+      color: white;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #e64420;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .formulario-vuelos {
+      flex-direction: column;
+      align-items: stretch;
+
+      .fechas .fechas-inputs {
+        flex-direction: column;
+      }
+    }
+  }
+}

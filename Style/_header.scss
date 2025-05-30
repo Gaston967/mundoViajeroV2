@@ -1,0 +1,26 @@
+@use 'variables';
+
+header {
+  background-color:variables.$primary-color;
+  .navbar {
+    
+    .navbar-brand {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      transition: color 0.3s;      
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+
+    .navbar-toggler {
+      border-color: rgb(247, 245, 245);
+    }
+
+  }
+}

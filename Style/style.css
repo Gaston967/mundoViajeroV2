@@ -1,0 +1,439 @@
+header {
+  background-color: #f8a305;
+}
+header .navbar .navbar-brand {
+  font-weight: bold;
+  color: #ffffff;
+}
+header .navbar .nav-link {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+header .navbar .nav-link:hover {
+  color: #007bff;
+}
+header .navbar .navbar-toggler {
+  border-color: rgb(247, 245, 245);
+}
+
+footer {
+  background-color: #f8a305;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #f8a305;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+.button:hover {
+  background-color: #f8a305;
+}
+
+.card-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card .card-img-top {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.card .card-body {
+  padding: 1rem;
+}
+.card .card-body h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+.card .card-body p {
+  margin-bottom: 0;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carousel {
+  max-width: 100%;
+}
+.carousel .carousel-inner .carousel-item img {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  margin: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contenedorBotonArriba {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorDestinos {
+  margin: 0;
+  padding: 0;
+}
+.contenedorDestinos .destino {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorDestinos .destino .descripcion {
+  margin: 10px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorDestinos .destino .imgDestino {
+  width: 100%;
+  max-width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  .contenedorDestinos .destino {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contenedorDestinos .destino .descripcion {
+    width: 50%;
+    padding: 20px;
+  }
+  .contenedorDestinos .destino .imgDestino {
+    margin-left: 20px;
+  }
+}
+
+.texto-historia {
+  text-align: center;
+  line-height: 1.7;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+.ubicacion-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.mapa-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.autos-form {
+  background-color: #f8a305;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.autos-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.autos-form .formulario-autos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.autos-form .formulario-autos .input-ciudad {
+  flex: 1 1 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+.autos-form .formulario-autos .fecha-hora {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 6px;
+  min-width: 180px;
+}
+.autos-form .formulario-autos .fecha-hora input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.autos-form .formulario-autos .fecha-hora span {
+  font-size: 0.8rem;
+  color: #555;
+}
+.autos-form .formulario-autos .boton-buscar {
+  background-color: #ff4d30;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  flex: 1 1 100%;
+  max-width: 200px;
+  align-self: center;
+}
+.autos-form .formulario-autos .boton-buscar:hover {
+  background-color: #e63b1e;
+}
+@media (max-width: 768px) {
+  .autos-form .formulario-autos {
+    flex-direction: column;
+  }
+  .autos-form .formulario-autos .fecha-hora {
+    flex: 1 1 100%;
+  }
+  .autos-form .formulario-autos .boton-buscar {
+    width: 100%;
+  }
+}
+
+.card-auto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 1rem auto;
+  gap: 1rem;
+}
+.card-auto .auto-info {
+  display: flex;
+  gap: 1rem;
+  flex: 1 1 60%;
+}
+.card-auto .auto-info .auto-detalle h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .card-auto {
+    flex-direction: column;
+  }
+  .card-auto .auto-info,
+  .card-auto .auto-precio {
+    flex: 1 1 100%;
+    border: none;
+    padding-left: 0;
+  }
+  .card-auto .auto-precio {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.resultados-autos {
+  margin: 2rem 0;
+}
+.resultados-autos h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.resultados-autos .grilla-autos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .resultados-autos .grilla-autos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.resultados-autos .card-auto {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .resultados-autos .card-auto {
+    width: 48%;
+  }
+}
+@media (min-width: 1024px) {
+  .resultados-autos .card-auto {
+    width: 31%;
+  }
+}
+
+.buscador-vuelos {
+  background-color: #f8a305;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.buscador-vuelos .formulario-vuelos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.buscador-vuelos .formulario-vuelos .campo {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  min-width: 200px;
+}
+.buscador-vuelos .formulario-vuelos .campo label {
+  font-size: 0.65rem;
+  color: #666;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.buscador-vuelos .formulario-vuelos .campo input {
+  border: none;
+  font-size: 0.9rem;
+  color: #111;
+  outline: none;
+  background: transparent;
+}
+.buscador-vuelos .formulario-vuelos .intercambiar {
+  display: flex;
+  align-items: center;
+}
+.buscador-vuelos .formulario-vuelos .intercambiar button {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.buscador-vuelos .formulario-vuelos .fechas .fechas-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+.buscador-vuelos .formulario-vuelos .fechas .fechas-inputs input {
+  width: 100px;
+}
+.buscador-vuelos .formulario-vuelos .btn-buscar {
+  background: #ff5733;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.buscador-vuelos .formulario-vuelos .btn-buscar:hover {
+  background: #e64420;
+}
+@media (max-width: 768px) {
+  .buscador-vuelos .formulario-vuelos {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .buscador-vuelos .formulario-vuelos .fechas .fechas-inputs {
+    flex-direction: column;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

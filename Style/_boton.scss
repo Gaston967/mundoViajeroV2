@@ -1,0 +1,16 @@
+@use 'variables';
+
+.button {
+  background-color: variables.$primary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+
+  &:hover {
+    background-color: variables.$primary-color;
+  }
+}

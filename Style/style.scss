@@ -1,0 +1,19 @@
+@use 'variables';
+@use 'header';
+@use 'footer';
+@use 'boton';
+@use 'card';
+@use 'carousel';
+@use 'formatos';
+@use 'destino';
+@use 'mapa';
+@use 'alquilerAuto';
+@use 'vuelo';
+
+
+body {
+  font-family: sans-serif;
+  color: variables.$text-color;
+  margin: 0;
+  padding: 0;
+}

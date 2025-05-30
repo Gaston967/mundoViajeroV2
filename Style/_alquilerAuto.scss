@@ -75,7 +75,7 @@
    
   }
 
-  // Responsive
+
   @media (max-width: 768px) {
     .formulario-autos {
       flex-direction: column;
@@ -90,7 +90,7 @@
     }
   }
 }
-//grilla de resultaados//
+//grilla de resultados//
 .card-auto {
   display: flex;
   flex-wrap: wrap;
@@ -116,7 +116,7 @@
     }
   }
 
-  // Responsive
+
   @media (max-width: 768px) {
     flex-direction: column;
 
